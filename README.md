@@ -12,7 +12,7 @@ errM=rms(res);
 ```
 This brute force method is slow because it uses a huge amount of memory in buffering the signal with one sample overlap and the computational complexity of the RMS function.
 
-Methods based on the DFT break the nonlinear distance measure into a linear component which is convolved using the DFT :
+Methods based on the DFT [for example Mueen's implementation](https://www.cs.unm.edu/~mueen/FastestSimilaritySearch.html) break the nonlinear distance measure into a linear component which is convolved using the DFT :
 ```
 (s-y)^2 = s^2 - 2s*y + y^2
 ```
